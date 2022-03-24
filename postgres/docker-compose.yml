@@ -13,20 +13,5 @@ services:
     ports:
       - "5432:5432"
 
-  pgadmin:
-    image: dpage/pgadmin4
-    restart: always
-    environment:
-      PGADMIN_DEFAULT_EMAIL: admin@mail.ru
-      PGADMIN_DEFAULT_PASSWORD: secret
-      PGADMIN_LISTEN_PORT: 80
-    ports:
-      - "8080:80"
-    volumes:
-      - pgadmin-data:/var/lib/pgadmin
-    links:
-      - "db:pgsql-server"
-
 volumes:
   db-data:
-  pgadmin-data:
