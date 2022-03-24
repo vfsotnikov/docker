@@ -1,9 +1,9 @@
-Выполнить команду: docker-compose run образ текст_команды
-поднимем: docker-compose up
-остановим: docker-compose down
+<p>выполнить команду: docker-compose run образ текст_команды</p>
+<p>поднимем: docker-compose up</p>
+<p>остановим: docker-compose down</p>
+ 
 
-
-Если контейнеры нужно временно:
+если контейнеры нужно временно:
 - остановить : docker-compose stop
 - поднять: docker-compose start
 
